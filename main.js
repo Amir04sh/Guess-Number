@@ -21,7 +21,7 @@ document.getElementById('guess-btn').addEventListener('click' , () => {
           return;
      }
 
-     attemps++ ;
+     attempts++ ;
      attempt.textContent = attempts;
 
      if(guess === RandomNumber) {
@@ -29,7 +29,7 @@ document.getElementById('guess-btn').addEventListener('click' , () => {
           
           message.style.color = '#ddb0b0' ;
 
-          if(!bestScore || attemps < bestScore) {
+          if(!bestScore || attempts < bestScore) {
                localStorage.setItem('bestScore' , attempts);
 
                document.getElementById('bestScore').textContent = attempts;
@@ -37,12 +37,12 @@ document.getElementById('guess-btn').addEventListener('click' , () => {
   
      }
 
-     else if(guess > RandomNumber) {
+     else if(guess < RandomNumber) {
           message.textContent = 'Go higher 👆' ;
           message.style.color = '#000';
      }
 
-          else if(guess < RandomNumber) {
+          else if(guess > RandomNumber) {
           message.textContent = 'Go lower 👇' ;
           message.style.color = '#000';
      }
@@ -54,8 +54,8 @@ document.getElementById('restart').addEventListener('click', () => {
 
      RandomNumber = Math.floor(Math.random() *100)+1 ;
 
-     attemps = 0;
-     attemp.textContent = 0;
+     attempts = 0;
+     attempt.textContent = 0;
 
      message.textContent = 'Start Guessing ...' ;
 
