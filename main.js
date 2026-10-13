@@ -7,12 +7,12 @@ if(bestScore) {
      .textContent = bestScore;
 }
 
-const guessIiput = document.getElementById('guessIiput');
+const guessIiput = document.getElementById('guess-input');
 const message = document.getElementById('message');
-const attemp = document.getElementById('attemp');
+const attemp = document.getElementById('attemps');
 
 document.getElementById('guess-btn').addEventListener('click' , () => {
-     const guess = Number ('guess-input.value');
+     const guess = Number(guessIiput.value);
      if (!guess || guess < 1 || guess > 100) {
           message.textContent = "Enter a Number between 1 - 100" ;
 
@@ -50,7 +50,7 @@ document.getElementById('guess-btn').addEventListener('click' , () => {
      guessIiput.value = "" ;
 });
 
-document.getElementById('restartBtn').addEventListener('click' , () => {
+document.getElementById('restart').addEventListener('click', () => {
 
      RandomNumber = Math.floor(Math.random() *100)+1 ;
 
