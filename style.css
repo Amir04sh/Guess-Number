@@ -1,0 +1,130 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif, serif, tahoma;
+}
+
+body{
+     min-height: 100vh;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+     background: linear-gradient(210deg , rgb(230, 255, 2) , rgb(146, 53, 53));
+     padding: 25px;
+     color: rgb(75, 54, 75);
+}
+
+.container{
+     width: 100%;
+     max-width: 440px;
+     text-align: center;
+
+}
+
+h1{
+     font-size: 40px;
+     font-style: italic;
+     margin-bottom: 15px;
+}
+
+.subtitle{
+     color: rgb(40, 19, 81);
+     margin-bottom: 25px;
+}
+
+.game-card{
+     background: linear-gradient(350deg, rgb(205, 12, 173), rgb(65, 156, 121));
+     color: aliceblue;
+     padding: 30px;
+     border: 10px solid wheat;
+     border-radius: 15px;
+}
+
+input{
+     width: 100%;
+     padding: 10px;
+     border: none;
+     outline: none;
+     margin-bottom: 15px;
+     background: aquamarine;
+     color: crimson;
+     font-size: 25px;
+     border-radius: 15px;
+}
+input::placeholder{
+     color: rgb(67, 63, 58);
+}
+
+#guess-btn{
+     width: 120px;
+     padding: 15px;
+     border: none;
+     font-size: 15px;
+     margin-bottom: 15px;
+     border-radius: 30px;
+     text-align: center;
+     background: linear-gradient(100deg, #06b6d4, #3b82f6);
+     cursor: pointer;
+     color:white;
+     transition: 0.4s;
+}
+#guess-btn:hover{
+     transform: translateY(-5px);
+     box-shadow: 0 0 10px red;
+}
+
+#message{
+     margin: 20px 0;
+     min-height: 40px;
+}
+
+.info{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+     gap: 90px;
+     background: rebeccapurple;
+     padding: 10px;
+     border-style: groove;
+     border-radius: 10px;
+     border-color: rgb(157, 44, 44) rgb(48, 48, 158);
+}
+
+.box{
+     width: 100px;
+}
+
+.box h3{
+     font-size: 22px;
+     color: mintcream;
+}
+
+#restart{
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     background: black;
+     color: gold;
+     transition: 0.4s;
+}
+#restart:hover{
+     transform: translateY(5px);
+     box-shadow: 0px -5px 20px goldenrod;
+}
+
+@media (max-width:600px) {
+     h1 {
+          font-size: 1.5rem;
+     }
+
+     .info{
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .box{
+          width: 100%;
+     }
+}
