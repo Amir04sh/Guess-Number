@@ -9,7 +9,7 @@ if(bestScore) {
 
 const guessIiput = document.getElementById('guess-input');
 const message = document.getElementById('message');
-const attemp = document.getElementById('attemps');
+const attempt = document.getElementById('attempts');
 
 document.getElementById('guess-btn').addEventListener('click' , () => {
      const guess = Number(guessIiput.value);
@@ -22,17 +22,17 @@ document.getElementById('guess-btn').addEventListener('click' , () => {
      }
 
      attemps++ ;
-     attemp.textContent = attemps;
+     attempt.textContent = attempts;
 
      if(guess === RandomNumber) {
-          message.textContent = ` CORRECT! WINNER. Number was ${RandomNumber} ` ;
+          message.textContent = ` CORRECT! Number was ${RandomNumber} ` ;
           
           message.style.color = '#ddb0b0' ;
 
           if(!bestScore || attemps < bestScore) {
-               localStorage.setItem('bestScore' , attemps);
+               localStorage.setItem('bestScore' , attempts);
 
-               document.getElementById('bestScore').textContent = attemps;
+               document.getElementById('bestScore').textContent = attempts;
           }
   
      }
