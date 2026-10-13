@@ -1,5 +1,5 @@
 let RandomNumber = Math.floor(Math.random() *100)+1;
-let attemps = 0;
+let attempts = 0;
 let bestScore = localStorage.getItem("bestScore");
 
 if(bestScore) {
