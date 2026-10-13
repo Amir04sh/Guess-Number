@@ -67,4 +67,4 @@ The fewer attempts you need to guess the correct number, the better your score!
 👨‍💻 Author
 
 Amir04sh
-github.com/Amir04sh
+https://github.com/Amir04sh
