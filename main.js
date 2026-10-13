@@ -38,13 +38,13 @@ document.getElementById('guess-btn').addEventListener('click' , () => {
      }
 
      else if(guess > RandomNumber) {
-          message.textContent = 'Too High' ;
-          message.style.color = '#928989' ;
+          message.textContent = 'Go higher 👆' ;
+          message.style.color = '#000';
      }
 
           else if(guess < RandomNumber) {
-          message.textContent = 'Too Low' ;
-          message.style.color = '#928989' ;
+          message.textContent = 'Go lower 👇' ;
+          message.style.color = '#000';
      }
 
      guessIiput.value = "" ;
