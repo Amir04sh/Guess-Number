@@ -22,7 +22,9 @@ Try to guess the secret number between 1 and 100 using as few attempts as possib
 
 📱 Responsive design
 ---
+>Demo link🎯
 
+---
 >🛠️ Built With
 
 HTML5
@@ -65,3 +67,4 @@ The fewer attempts you need to guess the correct number, the better your score!
 👨‍💻 Author
 
 Amir04sh
+github.com/Amir04sh
