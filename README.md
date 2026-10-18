@@ -66,6 +66,8 @@ The fewer attempts you need to guess the correct number, the better your score!
 ---
 👨‍💻 Author
 
-Amir04sh
+•Amir04sh
+⭐ If you like this project, feel free to give it a Star!
 ---
 https://github.com/Amir04sh
+
