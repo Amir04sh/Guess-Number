@@ -22,10 +22,7 @@ document.getElementById('guess-btn').addEventListener('click' , () => {
      }
 
      attempts++ ;
-
-if (attempts >= 30) {
-    attempts = 0;
-}
+     
      attempt.textContent = attempts;
 
      if(guess === RandomNumber) {
